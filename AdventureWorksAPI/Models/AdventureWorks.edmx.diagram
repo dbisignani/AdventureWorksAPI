@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3338f1dd7bcd412882223866d8e4d9ed" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorks2016Model.EmployeeDepartmentHistory" Width="2.25" PointX="5.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.Address" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.BusinessEntity" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.BusinessEntityAddress" Width="2.125" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.Person" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.SalesPerson" Width="1.5" PointX="7.875" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.SalesTerritory" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_BusinessEntityAddress_Address_AddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Person_BusinessEntity_BusinessEntityID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_SalesPerson_SalesTerritory_TerritoryID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.Department" Width="1.5" PointX="3.5" PointY="12.625" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_EmployeeDepartmentHistory_Department_DepartmentID" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.Employee" Width="1.5" PointX="5.25" PointY="16.25" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Employee_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_SalesPerson_Employee_BusinessEntityID" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.StateProvince" Width="1.5" PointX="6.125" PointY="0.625" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_StateProvince_SalesTerritory_TerritoryID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
